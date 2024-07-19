@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<!-- saved from url=(0090)https://party.websim.ai/api/v1/sites/tdKhE9LZqkdwpMWiX/html?origin=https%3A%2F%2Fwebsim.ai -->
+<html w-tid="0"><head w-tid="1"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>html{min-height:100%}.ctxmenu{position:fixed;border:1px solid #999;padding:2px 0;box-shadow:#aaa 3px 3px 3px;background:#fff;margin:0;z-index:9999;overflow-y:auto;font:15px Verdana, sans-serif;box-sizing:border-box}.ctxmenu li{margin:1px 0;display:block;position:relative;user-select:none}.ctxmenu li.heading{font-weight:bold;margin-left:-5px}.ctxmenu li span{display:block;padding:2px 20px;cursor:default}.ctxmenu li a{color:inherit;text-decoration:none}.ctxmenu li.icon{padding-left:15px}.ctxmenu img.icon{position:absolute;width:18px;left:10px;top:2px}.ctxmenu li.disabled{color:#ccc}.ctxmenu li.divider{border-bottom:1px solid #aaa;margin:5px 0}.ctxmenu li.interactive:hover{background:rgba(0, 0, 0, .1)}.ctxmenu li.submenu::after{content:"";position:absolute;display:block;top:0;bottom:0;right:.4em;margin:auto .1rem auto auto;border-right:1px solid #000;border-top:1px solid #000;transform:rotate(45deg);width:.3rem;height:.3rem}.ctxmenu li.submenu.disabled::after{border-color:#ccc}</style><!--<base href="" w-tid="2">--><base href=".">
+<link rel="stylesheet" href="./fonts(1).css">
+<link rel="stylesheet" href="./ctxmenu.css">
+
+
+<title w-tid="3">UNM Brain - Juego de Memoria Elegante</title><style w-tid="4">
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.game-container {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  padding: 20px;
+  text-align: center;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+h1 {
+  color: #4a4a4a;
+  margin: 0;
+  font-size: 24px;
+}
+
+.game-board {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.card {
+  width: 80px;
+  height: 80px;
+  background-color: #0000ff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  animation: float 3s ease-in-out infinite;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.card.flipped {
+  background: white;
+  font-size: 36px;
+  color: #4a4a4a;
+}
+
+button {
+  background-color: #0000ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #0000cc;
+}
+
+.score, .level {
+  font-size: 18px;
+  color: #4a4a4a;
+  margin-top: 10px;
+}
+
+.controls {
+  margin-top: 15px;
+}
+</style></head><body w-tid="5">
+<div class="game-container" w-tid="6">
+  <div class="logo-container" w-tid="7">
+    <img class="logo" src="./Logo animado de UNM Brain, un cerebro pulsando_1024x1024xtdKhE9LZqkdwpMWiXx6a9822d8dc422.jpg" alt="Logo animado de UNM Brain, un cerebro pulsando" width="40" height="40" w-tid="8" data-image_id="0" alt-rewritten="Pulsing animated brain logo for UNM Brain research institute.">
+    <h1 w-tid="9">UNM Brain</h1>
+  </div>
+  <div class="game-board" id="gameBoard" w-tid="10" style="grid-template-columns: repeat(4, 1fr);"><div class="card" data-value="D">UNM</div><div class="card" data-value="B">UNM</div><div class="card" data-value="H">UNM</div><div class="card" data-value="A">UNM</div><div class="card" data-value="C">UNM</div><div class="card" data-value="F">UNM</div><div class="card" data-value="E">UNM</div><div class="card" data-value="F">UNM</div><div class="card" data-value="B">UNM</div><div class="card" data-value="E">UNM</div><div class="card" data-value="D">UNM</div><div class="card" data-value="G">UNM</div><div class="card" data-value="A">UNM</div><div class="card" data-value="G">UNM</div><div class="card" data-value="C">UNM</div><div class="card" data-value="H">UNM</div></div>
+  <button onclick="resetGame()" w-tid="11">Nuevo Juego</button>
+  <div class="score" w-tid="12">Movimientos: <span id="moves" w-tid="13">0</span></div>
+  <div class="level" w-tid="14">Nivel: <span id="level" w-tid="15">1</span></div>
+</div>
+
+<audio id="bubbleSound" src="https://unmbrain.edu.ar/bubble-pop.mp3" w-tid="16"></audio>
+<audio id="applauseSound" src="https://unmbrain.edu.ar/applause.mp3" w-tid="17"></audio>
+<audio id="backgroundMusic" src="https://unmbrain.edu.ar/soft-background-melody.mp3" loop="" w-tid="18"></audio>
+
+<script w-tid="19">
+let flippedCards = [];
+let moves = 0;
+let matchedPairs = 0;
+let currentLevel = 1;
+const bubbleSound = document.getElementById('bubbleSound');
+const applauseSound = document.getElementById('applauseSound');
+const backgroundMusic = document.getElementById('backgroundMusic');
+let isMusicPlaying = false;
+let areSoundEffectsOn = true;
+
+const levelConfig = [
+  { pairs: 8, cols: 4 },
+  { pairs: 10, cols: 5 },
+  { pairs: 12, cols: 6 },
+  { pairs: 15, cols: 6 },
+  { pairs: 18, cols: 6 }
+];
+
+function createBoard(level) {
+  const gameBoard = document.getElementById('gameBoard');
+  gameBoard.innerHTML = '';
+  const { pairs, cols } = levelConfig[level - 1];
+  gameBoard.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
+  
+  const values = [];
+  for (let i = 0; i < pairs; i++) {
+    values.push(String.fromCharCode(65 + i));
+    values.push(String.fromCharCode(65 + i));
+  }
+  values.sort(() => Math.random() - 0.5);
+  
+  values.forEach(value => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.textContent = 'UNM';
+    card.setAttribute('data-value', value);
+    card.addEventListener('click', () => flipCard(card));
+    gameBoard.appendChild(card);
+  });
+}
+
+function flipCard(card) {
+  if (flippedCards.length < 2 && !card.classList.contains('flipped')) {
+    card.classList.add('flipped');
+    card.textContent = card.getAttribute('data-value');
+    flippedCards.push(card);
+    
+    if (flippedCards.length === 2) {
+      moves++;
+      document.getElementById('moves').textContent = moves;
+      
+      if (flippedCards[0].getAttribute('data-value') === flippedCards[1].getAttribute('data-value')) {
+        matchedPairs++;
+        if (areSoundEffectsOn) playSound(bubbleSound);
+        flippedCards = [];
+        if (matchedPairs === levelConfig[currentLevel - 1].pairs) {
+          setTimeout(() => {
+            if (areSoundEffectsOn) playSound(applauseSound);
+            if (currentLevel < levelConfig.length) {
+              alert(`¡Felicidades! Has completado el nivel ${currentLevel}. Avanzando al siguiente nivel.`);
+              currentLevel++;
+              document.getElementById('level').textContent = currentLevel;
+              resetGame();
+            } else {
+              alert(`¡Felicidades! Has completado todos los niveles en ${moves} movimientos.`);
+              resetGame();
+            }
+          }, 500);
+        }
+      } else {
+        setTimeout(() => {
+          flippedCards[0].classList.remove('flipped');
+          flippedCards[1].classList.remove('flipped');
+          flippedCards[0].textContent = 'UNM';
+          flippedCards[1].textContent = 'UNM';
+          flippedCards = [];
+        }, 1000);
+      }
+    }
+  }
+}
+
+function resetGame() {
+  moves = 0;
+  matchedPairs = 0;
+  document.getElementById('moves').textContent = moves;
+  createBoard(currentLevel);
+}
+
+function playSound(sound) {
+  sound.currentTime = 0;
+  sound.play().catch(e => console.error("Error al reproducir sonido:", e));
+}
+
+document.getElementById('level').textContent = currentLevel;
+resetGame();
+
+// Iniciar música de fondo automáticamente
+backgroundMusic.play().catch(e => console.error("Error al reproducir música de fondo:", e));
+
+// Precargar sonidos
+bubbleSound.load();
+applauseSound.load();
+backgroundMusic.load();
+</script>
+</body></html>
